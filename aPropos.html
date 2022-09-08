@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fillery</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/comportements.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Fillery</h1>
+        <p id="ouvertureMenu">≡</p>
+        <nav>
+            <p id="fermetureMenu">X</p>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="recherche.html">Rechercher</a></li>
+                <li><p id="ouvertureParametre">Paramètres</p></li>
+            </ul>
+        </nav>
+        <nav id="parametre">
+            <p id="fermetureParametre">X</p>
+            <ul>
+                <li>Mode préféré</li>
+                <li>
+                    <select name="choixMode" id="choixMode">
+                        <option value="-100vw">Droitier</option>
+                        <option value="100vw">Gaucher</option>
+                    </select>
+                </li>
+                <li>Changer le thème :</li>
+                <li>Couleur du fond : <input id="couleurFond" name="--couleur-fond" type='color'></li>
+                <li>Couleur du Menu : <input id="couleurMenu" name="--couleur-menu" type='color'></li>
+                <li>Couleur du texte : <input id="couleurTexte" name="--couleur-texte" type='color'></li>
+                <li>Couleur des haut de page et pied de page : <input id="couleurHeaderFooter" name="--couleur-header-footer" type='color'></li>
+                <li>Couleur des résumés : <input id="couleurNomResume" name="--couleur-nom-resume" type='color'></li>
+                <li><p id="reinitCouleur">Reinitialiser les couleurs</p></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <p>Ce site à été entièrement réalisé par PIAUD Joackim pour le projet de la mineure Bases du Web.</p>
+            <p>Le site Fillery est un site permettant de rechercher les informations de nombreux films, séries et acteurs.</p>
+            <p>Ce nom "Fillery" est tout simplement le mélange des mots <strong>Fil</strong>m et S<strong>éries</strong></p>
+            <p>Pour pouvoir afficher les informations de chaque film, série et acteur, ce site utilise l'API de The Movie DataBase, ainsi toutes les images, vidéos et contenus textuels proviennent de The Movie DataBase.</p>
+            <p>Ce site permet d'obtenir la date d'un film, ses acteurs, son nom, un résumé et plus encore.</p>
+            <p>Vous pouvez personnaliser votre expérience sur ce site en choisissant le mode gaucher ou droitier ou bien en changeant le thème des pages tout cela peut se faire à partir de l'onglet paramètre.</p>
+            <p>Bonne Recherche !</p>
+        </article>
+    </main>
+    <footer>
+        <p>Projet 2021 - Mineure Bases du Web - PIAUD Joackim</p>
+    </footer>
+
+
+</body>
+
+</html>

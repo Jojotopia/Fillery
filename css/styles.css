@@ -1,0 +1,374 @@
+/* Variables des couleurs de bases */
+:root{
+    --couleur-fond: #000000;
+    --couleur-menu: #616161;
+    --couleur-texte: white;
+    --couleur-header-footer: #404040;
+    --couleur-nom-resume: #121212;
+    --right-fermer: -100vw;
+}
+
+
+
+
+/* Onglet paramètres touts les boutons couleurs */
+#couleurFond{
+    background-color: var(--couleur-fond);
+    width: 70vw;
+    cursor: pointer;
+}
+#couleurMenu{
+    background-color: var(--couleur-menu);
+    width: 70vw;
+    cursor: pointer;
+}
+#couleurTexte{
+    background-color: var(--couleur-texte);
+    width: 70vw;
+    cursor: pointer;
+}
+#couleurHeaderFooter{
+    background-color: var(--couleur-header-footer);
+    width: 70vw;
+    cursor: pointer;
+}
+#couleurNomResume{
+    background-color: var(--couleur-nom-resume);
+    width: 70vw;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Commun à toutes les pages */
+
+body{
+    background-color: var(--couleur-fond);
+    font-family: calibri;
+    color: var(--couleur-texte);
+}
+
+    /* Header */
+header{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background-color: var(--couleur-header-footer);
+    z-index: 2;
+}
+
+header h1{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header input{
+    background-color: var(--couleur-fond);
+    margin-right: 1rem;
+    display: inline;
+    color: var(--couleur-texte);
+}
+
+header .bouton{
+    background-color: var(--couleur-nom-resume);
+    text-align: center;
+    border-radius: 6%;
+    padding: 0.5rem;
+    display: inline;
+    cursor: pointer;
+}
+
+#ouvertureMenu{
+    position: fixed;
+    padding: 0.5rem;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav{
+    position: absolute;
+    right: var(--right-fermer);
+    top: 0;
+    z-index: 3;
+    background-color: var(--couleur-menu);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.menuOuvert{
+    right: 0;
+    transition: 0.5s;
+}
+
+nav #fermetureMenu, nav #fermetureParametre{
+    padding: 0.5rem;
+    align-self: flex-end;
+    margin-right: 1rem;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li{
+    border-bottom: 1px solid var(--couleur-texte);
+    text-align: center;
+}
+
+nav p:hover, nav a:hover{
+    background-color: var(--couleur-header-footer);
+}
+
+nav ul li *{
+    text-decoration: none;
+    color: var(--couleur-texte);
+    padding: 1rem;
+    display: block;
+    width: 80vw;
+}
+
+#parametre{
+    overflow-y: auto;
+}
+#ouvertureParametre{
+    cursor: pointer;
+}
+
+#parametre li{
+    color: var(--couleur-texte);
+    padding: 1rem;
+    display: block;
+    width: 80vw;
+}
+
+#parametre #choixMode{
+    color: var(--couleur-texte);
+    background-color: var(--couleur-fond);
+    width: 70vw;
+    cursor: pointer;
+}
+
+#parametre ul li p{
+    width: auto;
+    cursor: pointer;
+}
+
+    /* Main */
+main{
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+main #error{
+    display: none;
+}
+
+main article{
+    background-color: var(--couleur-nom-resume);
+}
+
+main article p{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+strong{
+    font-weight: bold;
+}
+
+section{
+    margin-bottom: 1rem;
+}
+
+    /* Footer */
+footer{
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    background-color: var(--couleur-header-footer);
+    z-index: 1;
+}
+
+footer p{
+    padding: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+
+
+
+/* Page Recherche */
+
+    /* Header */
+header section{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+    /*Main*/
+.boutonsPreSui{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: var(--couleur-nom-resume);
+}
+#pagePrecedente, #pageSuivante{
+    cursor: pointer;
+}
+    /* Résumé affichable en survol */
+#listeSimilaires figure .resumeFermer{
+    display: none;
+}
+#listeSimilaires figure .resumeOuvert{
+    background-color: var(--couleur-nom-resume);
+    padding: 1rem;
+    height: 21rem;
+    position: absolute;
+    width: 14.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+/* Bouton plus d'info */
+#listeSimilaires figure .bouton{
+    background-color: var(--couleur-header-footer);
+    padding: 0.5rem;
+    width: 6rem;
+    align-self: center;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+
+
+
+/* Page Infos */
+
+    /* Main */
+section h2{
+    background-color: var(--couleur-nom-resume);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#film img, #saison img{
+    height: 25rem;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Bande annonce */
+#film iframe{
+    width: 100%;
+    height: 50vh;
+}
+
+#film article p{
+    padding-bottom: 0;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+#saisons figure, #casting figure{
+    cursor: pointer;
+}
+
+
+
+
+
+/* Page Recherche et Page Infos */
+    /* Liste contenant les résultats de la recherche */
+#listeSimilaires, #saisons, #acteurs, #equipe, #fond, #poster{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-content: center;
+}
+#acteurs, #equipe, #fond, #poster, #saisons{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+    /* Affiche de chaque film */
+#listeSimilaires figure, #saisons figure, #acteurs figure, #equipe figure{
+    padding: 1rem;
+    border-bottom: solid 1px var(--couleur-texte);
+    height: 25rem;
+    display: inline;
+    width: 16.5rem;
+    display: flex;
+    flex-direction: column;
+}
+#acteurs figure, #equipe figure, #saisons figure{
+    border: none;
+    width: auto;
+}
+    /* Images de chaque résultats */
+#listeSimilaires figure img, #saisons figure img, #acteurs figure img, #equipe figure img{
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    height: 95%;
+}
+#acteurs figure img, #equipe figure img, #fond img, #poster img, #saisons figure img{
+    height: auto;
+    width: 10rem;
+}
+    /* Nom de chaque résultats */
+#listeSimilaires figure figcaption, #saisons figure figcaption, #acteurs figure figcaption, #equipe figure figcaption{
+    background-color: var(--couleur-nom-resume);
+    padding: 1rem;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    margin-top: -2rem;
+}
+#acteurs figure figcaption, #equipe figure figcaption, #saisons figure figcaption{
+    margin-top: 0;
+    width: 10rem;
+}
+
+/* Page saison */
+#episodes{
+    display: flex;
+    flex-direction: column;
+}
+#episodes article{
+    margin-bottom: 1rem;
+}
+#episodes article p, #saison article p{
+    font-size: 1rem;
+}
+#episodes article figure img{
+    width: 100%;
+}
+#episodes article figure figcaption{
+    text-align: center;
+    font-size: 1.5rem;
+}

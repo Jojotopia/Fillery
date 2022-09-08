@@ -1,0 +1,91 @@
+@media screen and (min-width: 769px){
+
+    /* Page Recherche */
+    main{
+        margin-top: 11rem;
+    }
+    #listeSimilaires{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #listeSimilaires figure{
+        border: none;
+    }
+
+
+    /* Page Infos et Saison*/
+    #film, #saison{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: var(--couleur-nom-resume);
+        align-items: center;
+    }
+    #film h2, #saison h2{
+        flex: 0 1 100%;
+    }
+    #film img, #saison img{
+        height: 70vh;
+    }
+    #film article, #saison article{
+        flex: 1 0 50%;
+    }
+    #film iframe{
+        width: 50vw;
+        height: 50vh;
+        display: block;
+        margin: auto;
+    }
+
+    /* Page Saison */
+    #episodes{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #episodes article{
+        width: 30vw;
+    }
+}
+
+/* Le menu sera déroulable tant que la hauteur de l'écran sera faible en mode paysage */
+@media screen and (min-height: 500px) and (orientation: landscape){
+    /* Toutes les pages */
+    header nav:first-of-type{
+        position: initial;
+        flex-direction: row;
+        height: auto;
+    }
+    nav:first-of-type ul{
+        flex-direction: row;
+        width: 100vw;
+    }
+    nav:first-of-type ul li *{
+        width: auto;
+    }
+    nav:first-of-type ul li{
+        flex-grow: 1;
+    }
+
+    #fermetureMenu, #ouvertureMenu{
+        display: none;
+    }
+
+    #parametre{
+        height: auto;
+    }
+    #parametre ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #parametre ul li{
+        width: auto;
+        border: none;
+    }
+    #parametre #choixMode{
+        width: auto;
+        padding: 0;
+    }
+    #parametre input{
+        width: auto;
+    }
+}

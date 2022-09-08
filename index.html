@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fillery</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/comportements.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Fillery</h1>
+        <p id="ouvertureMenu">≡</p>
+        <nav>
+            <p id="fermetureMenu">X</p>
+            <ul>
+                <li><a href="recherche.html">Rechercher</a></li>
+                <li><a href="aPropos.html">A propos de Fillery</a></li>
+                <li><p id="ouvertureParametre">Paramètres</p></li>
+            </ul>
+        </nav>
+        <nav id="parametre">
+            <p id="fermetureParametre">X</p>
+            <ul>
+                <li>Mode préféré</li>
+                <li>
+                    <select name="choixMode" id="choixMode">
+                        <option value="-100vw">Droitier</option>
+                        <option value="100vw">Gaucher</option>
+                    </select>
+                </li>
+                <li>Changer le thème :</li>
+                <li>Couleur du fond : <input id="couleurFond" name="--couleur-fond" type='color'></li>
+                <li>Couleur du Menu : <input id="couleurMenu" name="--couleur-menu" type='color'></li>
+                <li>Couleur du texte : <input id="couleurTexte" name="--couleur-texte" type='color'></li>
+                <li>Couleur des haut de page et pied de page : <input id="couleurHeaderFooter" name="--couleur-header-footer" type='color'></li>
+                <li>Couleur des résumés : <input id="couleurNomResume" name="--couleur-nom-resume" type='color'></li>
+                <li><p id="reinitCouleur">Reinitialiser les couleurs</p></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <p>Bienvenue sur Fillery le site qui vous permet de rechercher de nombreuses informations sur vos films, séries et acteurs préférés.</p>
+            <p>Pour commencer appuyez sur les trois traits et rendez-vous dans l'onglet "Rechercher", ensuite tapez votre recherche dans la zone de texte puis cliqué sur "Chercher"</p>
+            <p>Ensuite tous les résultats s'afficheront vous pourrez alors lire un résumé en survolant l'affiche ou en cliquant dessus si vous êtes sur petits écrans. Avec le résumé un bouton apparaîtra appuyez dessus et vous aurez accès à toutes les informations sur cette recherche.</p>
+            <p>Maintenant que vous avez lu toutes les instructions vous pouvez facilement utiliser ce site et commencer à rechercher vos films et séries préférés, alors Bonne Recherche !</p>
+        </article>
+    </main>
+    <footer>
+        <p>Projet 2021 - Mineure Bases du Web - PIAUD Joackim</p>
+    </footer>
+
+
+</body>
+
+</html>
